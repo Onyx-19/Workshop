@@ -6,6 +6,13 @@
       "apellido": "",
       "email": "admin@correo.com",
       "contraseña": "Admin@123"
+    },
+    {
+      "nombre": "daniel",
+      "apellido": "diaz",
+      "correo": "daniel@correo.com",
+      "contraseña": "1",
+      "id": 2
     }
   ],
   "productos": [

@@ -24,3 +24,38 @@
      console.log('response >>> ', response)
     }
    
+// Insersion de datos en el formulario
+
+const getData = async(id)=>{
+   const resp = await fetch(id)
+   const data = await resp.json()
+   console.log(data)
+   return data
+   }
+
+const form = document.getElementById('formUser')
+const urlUser ="http://localhost:4000/usuarios/"
+
+
+form.addEventListener('submit', async(e)=>{
+   e.preventDefault()
+
+   let nombre = document.getElementById("nombre").value;
+   let apellido = document.getElementById("apellido").value;
+   let correo = document.getElementById("correo").value;
+   let contraseña = document.getElementById("contraseña").value;
+   const objetoUsuario = {nombre, apellido, correo, contraseña }
+
+   await fetch(urlUser,{
+       method: 'POST',
+       body: JSON.stringify(objetoUsuario),
+       headers:{
+           "Content-Type": "application/json; charset=utf-8"
+       } 
+   })
+
+   alert("Bienvenido " + nombre + ", el usuario se ha agregado correctamente.")
+   console.log(objetoUsuario);    
+})
+
+
