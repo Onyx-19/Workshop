@@ -1,0 +1,17 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Administrador",
+      "apellido": "",
+      "email": "admin@correo.com",
+      "contraseña": "Admin@123"
+    }
+  ],
+  "productos": [
+    {}
+  ],
+  "carrito": [
+    {}
+  ]
+}

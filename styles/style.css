@@ -1,7 +1,7 @@
 header{
     position: fixed; 
-    width: 100%;
-    
+    width: 100%;    
+    z-index: 3;
 }
 main{
     padding-top: 10%;
@@ -62,3 +62,52 @@ main{
     width: 100px;
     height: 55px;
 }
+
+
+/*  Formulario  icono de usuario*/
+
+.mainUser{
+  background-image: url("../imagenes/imagenprincipal.png");
+  margin: 3rem 0;
+  background-size: cover;
+  padding: 4rem;
+}
+.formUser{
+  margin: 2rem 0;
+  max-width: 50%;
+  margin: 0 25%;
+  border-radius: 15px ;
+  background-color: whitesmoke;
+  opacity: 0.9;
+}
+.divUser{
+  padding: 5% 15%;
+  text-align: center;
+  font-size: 120%;
+  font-family: cursive;
+}
+/* .h3User{
+  margin: 4.5% 5%;
+} */
+.labelUser{
+     width: 80%;
+}
+.inputUser{
+  width: 80%;
+  height: 35px;
+  border: solid 5px orangered;
+  border-radius: 15px;
+  margin: 2.5% 5%;
+  font-size: 100%;
+  font-family: cursive;
+}
+.btnUser{
+  background-color: orangered;
+  margin: 3%;
+  padding: 2.5%;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 100%;
+}
+
