@@ -1,0 +1,48 @@
+header{
+    position: fixed; 
+    width: 100%;
+    
+}
+main{
+    padding-top: 10%;
+    background-image: url("../imagenes/imagenprincipal.png");
+}
+  .navbar .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar .nav-item {
+    padding: 10px 20px;
+  }
+  .navbar .nav-link {
+    font-size: 20px !important;
+    margin-left: 10px;
+    color: #0a0a0a !important;
+  }
+  .fa-bars {
+    color: #0a0a0a;
+    font-size: 18px;
+  }
+.nav-tabs {
+    border-bottom: 1px solid #f10437;
+}
+.youMay{
+    text-align: center;
+}
+#card{
+    animation: rotate 4s ease infinite;
+    transform-style: preserve-3d;
+   
+}
+   
+@for $card from 1 through 13 {
+    #card:nth-child(#{$card}) {
+		animation-delay: 0.4s * $card
+	}
+}
+
+
+@keyframes rotate {
+  50%, to {
+		transform: rotateY(360deg);
+	}
+}
