@@ -28,6 +28,10 @@ main{
 .youMay{
     text-align: center;
 }
+
+#FreshStripeSweater{
+    color:blanchedalmond;
+}
 #card{
     animation: rotate 4s ease infinite;
     transform-style: preserve-3d;
@@ -45,4 +49,16 @@ main{
   50%, to {
 		transform: rotateY(360deg);
 	}
+}
+
+
+
+#imgf{
+    width: 45px;
+    height: 45px;
+}
+
+#imagt{
+    width: 100px;
+    height: 55px;
 }
